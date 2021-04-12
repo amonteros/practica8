@@ -57,11 +57,11 @@ function HISTORIAL_led(){
     console.log("Conectado...");
 	
     client.subscribe("amonteros.fie@unach.edu.ec/prueba");
-    client.subscribe("amonteros.fie@unach.edu.ec/prueba1");
+    //client.subscribe("amonteros.fie@unach.edu.ec/prueba1");
 	  
-    //message = new Paho.MQTT.Message("hola desde la web");
-   // message.destinationName = "amonteros.fie@unach.edu.ec/prueba1";
-   // client.send(message);
+    message = new Paho.MQTT.Message("hola desde la web");
+    message.destinationName = "amonteros.fie@unach.edu.ec/prueba1";
+    client.send(message);
 	
   }
 
