@@ -81,5 +81,9 @@ function HISTORIAL_led(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  document.getElementById("sensor").innerHTML=message.payloadString;
+	  }
+            if(variables[2]!=""){
+            informacion=variables[2];
+    }
   } 
   
