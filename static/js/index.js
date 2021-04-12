@@ -18,7 +18,7 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function HISTORIAL(){	
+function HISTORIAL_led(){	
 	
 	console.log("historial");
 	message = new Paho.MQTT.Message("HISTORIAL");
