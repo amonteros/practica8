@@ -82,23 +82,23 @@ function HISTORIAL_led(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	
-		msm=message.payloadString;
-		if(msm="ON"){
+		x=message.payloadString;
+		if(x="ON"){
 		
-			document.getElementById("sensor").innerHTML=msm;
+			document.getElementById("sensor").innerHTML=x;
 		}
-		 if(msm="OFF"){
+		 elif(x="OFF"){
 		
-			document.getElementById("sensor").innerHTML=msm;
+			document.getElementById("sensor").innerHTML=x;
 		}
 	  
-	        if(msm[0]=="1"){
+	        elif(x[0]=="HISTORIAL"){
 		
 			var sms=[];
-			for (i=1;i<msm.length;i++){
-			sms[i-1]=msm[i];
+			for (i=1;i<x.length;i++){
+			sms[i-1]=x[i];
 		}
-		document.getElementById("sensor2").innerHTML=msm;
+		document.getElementById("sensor2").innerHTML=sms;
         
     }
   } 
