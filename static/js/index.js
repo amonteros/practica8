@@ -57,7 +57,7 @@ function HISTORIAL_led(){
 	
 
     client.subscribe("amonteros.fie@unach.edu.ec/prueba1");
-    client.subscribe("amonteros.fie@unach.edu.ec/prueba");
+    //client.subscribe("amonteros.fie@unach.edu.ec/prueba");
 	  
     message = new Paho.MQTT.Message("hola desde la web");
     message.destinationName = "amonteros.fie@unach.edu.ec/prueba";
