@@ -81,7 +81,26 @@ function HISTORIAL_led(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  document.getElementById("sensor").innerHTML=message.payloadString;
+	
+		x=message.payloadString;
+		if(x="ON"){
+		
+			document.getElementById("sensor").innerHTML=x;
+		}
+		 else if(x="OFF"){
+		
+			document.getElementById("sensor").innerHTML=x;
+		}
+	  
+	        else if(x[0]=="HISTORIAL"){
+		
+			var sms=[];
+			for (i=1;i<x.length;i++){
+			sms[i-1]=x[i];
+		}
+		document.getElementById("sensor2").innerHTML=sms;
+        
+    }
   } 
   
         
