@@ -55,7 +55,7 @@ function HISTORIAL_led(){
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("amonteros.fie@unach.edu.ec/prueba");
+
     client.subscribe("amonteros.fie@unach.edu.ec/prueba1");
 	  
     message = new Paho.MQTT.Message("hola desde la web");
