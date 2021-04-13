@@ -64,7 +64,7 @@ function HISTORIAL_sensor2(){
 	
 
  
-    client.subscribe("amonteros.fie@unach.edu.ec/prueba1");
+    client.subscribe("amonteros.fie@unach.edu.ec/prueba2");
 
 	  
     message = new Paho.MQTT.Message("hola desde la web");
