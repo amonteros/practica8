@@ -89,6 +89,18 @@ function HISTORIAL_led(){
 		
 			document.getElementById("sensor").innerHTML=sms;
 		}
+	  
+	        if(sms[0]=="1"){
+		
+			var sms=[];
+			for (i=1;i<sms.length;i++){
+			sms[i-1]=sms[i];
+		}
+		document.getElementById("sensor2").innerHTML=sms;
+        
+    }
+  } 
+  
         
     }
   
