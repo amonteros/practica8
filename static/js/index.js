@@ -78,26 +78,11 @@ function HISTORIAL_led(){
     }
   }
 
-  // called when a message arrives
+ // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	
-		x=message.payloadString;
-		if(x="ON"){
-		
-			document.getElementById("sensor").innerHTML=x;
-		}
-		if(x="OFF"){
-		
-			document.getElementById("sensor").innerHTML=x;
-		}
-	  
-	        if(x =="HISTORIAL"){
-		
-		}
-		document.getElementById("sensor2").innerHTML=sms;
-        
-    }
+	  document.getElementById("sensor").innerHTML=message.payloadString;
+  } 
   
   
         
