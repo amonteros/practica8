@@ -85,7 +85,7 @@ function HISTORIAL_led(){
 		
 			document.getElementById("sensor").innerHTML=msm;
 		}
-		if(msm="OFF"){
+		 if(msm="OFF"){
 		
 			document.getElementById("sensor").innerHTML=msm;
 		}
