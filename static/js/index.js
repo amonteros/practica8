@@ -1,28 +1,35 @@
 //https://www.eclipse.org/paho/clients/js/
 var cont=0;
-function LED1_On() {
+//function LED1_On() {
 	//alert("led on");
-	console.log("Led_ON");
+	//console.log("Led_ON");
 	//document.getElementById("sensor").innerHTML="led on";
-	message = new Paho.MQTT.Message("ON");
-    	message.destinationName = "amonteros.fie@unach.edu.ec/prueba";
-    	client.send(message);
+	//message = new Paho.MQTT.Message("ON");
+    	//message.destinationName = "amonteros.fie@unach.edu.ec/prueba";
+    	//client.send(message);
   
-}
-function LED1_Off(){	
+//}
+//function LED1_Off(){	
 	//alert("OFF");
-	console.log("Led_OFF");
-	message = new Paho.MQTT.Message("OFF");
+	//console.log("Led_OFF");
+	//message = new Paho.MQTT.Message("OFF");
+    	//message.destinationName = "amonteros.fie@unach.edu.ec/prueba";
+    	//client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+//}
+
+function HISTORIAL_sensor1(){	
+	
+	console.log("HISTORIAL1");
+	message = new Paho.MQTT.Message("HISTORIAL1");
     	message.destinationName = "amonteros.fie@unach.edu.ec/prueba";
     	client.send(message);
-	//document.getElementById("sensor").innerHTML="led off";
 }
+function HISTORIAL_sensor2(){
 
-function HISTORIAL_led(){	
-	
-	console.log("Led_HISTORIAL");
-	message = new Paho.MQTT.Message("HISTORIAL");
-    	message.destinationName = "amonteros.fie@unach.edu.ec/prueba";
+	console.log("HISTORIAL2");
+	message = new Paho.MQTT.Message("HISTORIAL2");
+    	message.destinationName = "amonteros.fie@unach.edu.ec/prueba1";
     	client.send(message);
 	
 }
