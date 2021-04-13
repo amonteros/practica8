@@ -18,16 +18,6 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function HISTORIAL_led(){	
-	
-	console.log("Historial");
-	message = new Paho.MQTT.Message("HISTORIAL");
-    	message.destinationName = "amonteros.fie@unach.edu.ec/prueba1";
-    	client.send(message);
-	
-}
-
-
 
 
 
@@ -81,9 +71,6 @@ function HISTORIAL_led(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  document.getElementById("sensor").innerHTML=message.payloadString;
-	  
-            if(variables[2]!=""){
-            informacion=variables[2];
-    }
+	 
   } 
   
