@@ -98,7 +98,7 @@ function HISTORIAL_led(){
 		document.getElementById("sensor2").innerHTML=sms;
         
     }
-  } 
+  
   
         
    
