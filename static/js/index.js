@@ -96,7 +96,7 @@ function HISTORIAL_led(){
 			for (i=1;i<msm.length;i++){
 			sms[i-1]=msm[i];
 		}
-		document.getElementById("sensor2").innerHTML=msm;
+		document.getElementById("sensor2").innerHTML=sms;
         
     }
   } 
