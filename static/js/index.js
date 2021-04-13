@@ -22,7 +22,7 @@ function HISTORIAL_led(){
 	
 	console.log("Led_HISTORIAL");
 	message = new Paho.MQTT.Message("HISTORIAL");
-    	message.destinationName = "amonteros.fie@unach.edu.ec/prueba2";
+    	message.destinationName = "amonteros.fie@unach.edu.ec/prueba";
     	client.send(message);
 	
 }
