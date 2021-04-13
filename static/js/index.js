@@ -18,14 +18,14 @@ var cont=0;
 	//document.getElementById("sensor").innerHTML="led off";
 //}
 
-function HISTORIAL_sensor1(){	
+function Historial_sensor1(){	
 	
 	console.log("HISTORIAL1");
 	message = new Paho.MQTT.Message("HISTORIAL1");
     	message.destinationName = "amonteros.fie@unach.edu.ec/prueba";
     	client.send(message);
 }
-function HISTORIAL_sensor2(){
+function Historial_sensor2(){
 
 	console.log("HISTORIAL2");
 	message = new Paho.MQTT.Message("HISTORIAL2");
