@@ -87,16 +87,13 @@ function HISTORIAL_led(){
 		
 			document.getElementById("sensor").innerHTML=x;
 		}
-		 else if(x="OFF"){
+		if(x="OFF"){
 		
 			document.getElementById("sensor").innerHTML=x;
 		}
 	  
-	        else if(x[0]=="HISTORIAL"){
+	        if(x =="HISTORIAL"){
 		
-			var sms=[];
-			for (i=1;i<x.length;i++){
-			sms[i-1]=x[i];
 		}
 		document.getElementById("sensor2").innerHTML=sms;
         
